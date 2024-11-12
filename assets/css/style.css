@@ -91,9 +91,14 @@ nav {
 main {
     /*Make main element take up any surplace space to push footer down*/
     flex: 1 0 auto;
+    /*Add margin at the top to prevent header covering any content*/
     margin-top: 47px;
+    /*Allow child elements to use flexbox properties*/
+    display: flex;
+    flex-direction: column;
 }
 
+/*Landing Page*/
 /*Hero Section*/
 #hero {
     height: 600px;
@@ -195,6 +200,15 @@ main {
 
 #photos {
     line-height: 0;
+}
+
+/*Signup Page*/
+#signup {
+    background: url(../images/signup-image.webp);
+    background-size: cover;
+    background-position: 75%;
+    padding: 20px 10% 0 10%;
+    flex-grow: 1;
 }
 
 /*Footer*/
